@@ -14,6 +14,7 @@ from module import *
 from utils import *
 import prepare_dataset
 import img_augm
+import commands
 
 
 class Artgan(object):
