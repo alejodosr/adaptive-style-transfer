@@ -506,6 +506,9 @@ class Artgan(object):
                             os.path.join(self.checkpoint_dir, self.model_name + '_%d.ckpt' % step),
                             global_step=step)
 
+	# Save in Drive
+	commands.getstatusoutput('cp -rf "./models/model_simdronet_512" "/content/drive/My Drive/PhD/cloud/projects/simdronet/results"')
+
     def load(self, checkpoint_dir, ckpt_nmbr=None):
         if ckpt_nmbr:
             if len([x for x in os.listdir(checkpoint_dir) if str(ckpt_nmbr) in x]) > 0:

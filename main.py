@@ -1,5 +1,6 @@
 import argparse
 import tensorflow as tf
+import commands
 tf.set_random_seed(228)
 from model import Artgan
 
